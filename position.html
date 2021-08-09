@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            height: 2000px;
+        }
+        .divstatic{
+            width: 300px;
+            height: 200px;
+            border: 2px solid red;
+            position: static;
+            left: 30px;
+            top:100px;
+            background-color: white;
+        }
+
+         .divrelative{
+            width: 300px;
+            height: 200px;
+            border: 2px solid red;
+            position: relative;
+            left: 30px;
+            top:100px;
+            background-color: white;
+        }
+
+        .divfixed{
+            width: 300px;
+            height: 200px;
+            border: 2px solid red;
+            position: fixed;
+            left: 30px;
+            top:300px;
+            background-color: white;
+        }
+
+        .divabsolute{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            border: 2px solid green;
+
+        }
+
+        .divsticky{
+           position: sticky;
+           border: 2px solid rgb(255, 94, 0);
+           top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="divstatic">
+        <p>static ,no left,top prop works</p>
+    </div>
+
+
+    <div class="divrelative">
+        <p>relative ,all prop works</p>
+    </div><br/>
+
+
+    <div class="divfixed">
+            <p>fixed ,scroll to see the static element</p>
+    </div>
+
+    <div class="divrelative">
+        <div class="divabsolute">absolute ,positioned relative to  nearest element</div>
+    </div>
+    
+
+    <div class="divsticky">
+        sticky = relative + fixed
+    </div>
+</body>
+</html>
