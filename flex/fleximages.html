@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex images</title>
+    <style>
+       *{
+           box-sizing: border-box;
+       }
+       .cont_1,.cont_2{
+           display: flex;
+           flex-direction: row;
+           width: 97%;
+           margin: 5px auto;
+       }
+       .cont_1 div,.cont_2 div{
+           padding: 20px;
+           flex:100%;
+           text-align: center;
+           margin:5px;
+       }
+
+       @media (max-width:560px){
+           .cont_1,.cont_2{
+               flex-direction: column;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div class="cont_1">
+        <div>
+            <video width="320" height="300" autoplay>
+                <source src="https://player.vimeo.com/external/519481616.sd.mp4?s=f8b9124b07da8793dd6872da0bbcd3a7da23d6f4&profile_id=165&oauth2_token_id=57447761">
+                Your browser does not support the video tag.
+            </video>
+             <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, illo vel? Ipsum sint perspiciatis quisquam voluptates animi impedit dolore reiciendis, asperiores temporibus excepturi quibusdam tempore architecto ex, esse eligendi dignissimos!
+            </div>
+        </div>
+        <div >
+        <img src="https://images.pexels.com/photos/8692663/pexels-photo-8692663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            style="width: 100%;height: 300px;">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, illo vel? Ipsum sint perspiciatis quisquam
+            voluptates animi impedit dolore reiciendis, asperiores temporibus excepturi quibusdam tempore architecto ex, esse
+            eligendi dignissimos!
+        </div>
+        </div>
+        <div>
+        <img src="https://images.pexels.com/photos/4319883/pexels-photo-4319883.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            style="width: 100%;height: 300px;">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, illo vel? Ipsum sint perspiciatis quisquam
+            voluptates animi impedit dolore reiciendis, asperiores temporibus excepturi quibusdam tempore architecto ex, esse
+            eligendi dignissimos!
+        </div>
+        </div>
+    </div>
+    <div class="cont_2">
+        <div>
+            <img src="https://images.pexels.com/photos/1008180/pexels-photo-1008180.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                style="width: 100%;height: 300px;">
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, illo vel? Ipsum sint perspiciatis quisquam
+                voluptates animi impedit dolore reiciendis, asperiores temporibus excepturi quibusdam tempore architecto ex,
+                esse
+                eligendi dignissimos!
+            </div>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/6828031/pexels-photo-6828031.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                style="width: 100%;height: 300px;">
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, illo vel? Ipsum sint perspiciatis quisquam
+                voluptates animi impedit dolore reiciendis, asperiores temporibus excepturi quibusdam tempore architecto ex,
+                esse
+                eligendi dignissimos!
+            </div>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/824572/pexels-photo-824572.jpeg?auto=compress&cs=tinysrgb&dpr=2&fit=crop&h=250&w=360"
+                style="width: 100%;height: 300px;">
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, illo vel? Ipsum sint perspiciatis quisquam
+                voluptates animi impedit dolore reiciendis, asperiores temporibus excepturi quibusdam tempore architecto ex,
+                esse
+                eligendi dignissimos!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

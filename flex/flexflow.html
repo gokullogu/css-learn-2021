@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+    .row_nowrap{
+        display: flex;
+        flex-flow: row nowrap;
+        border:1px solid black;
+        padding: 5px;
+        width:350px;
+        height: 150px;
+    }
+
+    .row_nowrap div{
+        padding: 20px;
+         width: 20px;
+        height: 20px;
+    }
+
+    .row_wrap{
+        display: flex;
+        flex-flow: row wrap;
+        border:1px solid black;
+        padding: 5px;
+        width:250px;
+        height: 150px;
+    }
+
+    .row_wrap div{
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+        .row_wrap_reverse{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        border:1px solid black;
+        padding: 5px;
+        width:250px;
+        height: 150px;
+    }
+
+    .row_wrap_reverse div{
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .row_reverse_nowrap{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        border:1px solid black;
+        padding: 5px;
+          width:350px;
+        height: 150px;
+    }
+
+    .row_reverse_nowrap div{
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+      .row_reverse_wrap{
+        display: flex;
+        flex-flow: row-reverse wrap;
+        border:1px solid black;
+        padding: 5px;
+        width:250px;
+        height: 150px;
+    }
+
+    .row_reverse_wrap div{
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+     .row_reverse_wrap_reverse{
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+        border:1px solid black;
+        padding: 5px;
+        width:250px;
+        height: 150px;
+    }
+
+    .row_reverse_wrap_reverse div{
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    </style>
+</head>
+<body>
+    <p>flex flow:row nowrap</p>
+    <div class="row_nowrap">
+        <div style="background-color: antiquewhite;">1</div>
+        <div style="background-color: aqua;">2</div>
+        <div style="background-color: aquamarine;">3</div>
+        <div style="background-color:blueviolet;">4</div>
+        <div style="background-color: cadetblue;">5</div>
+        <div style="background-color: burlywood;">6</div>
+        <div style="background-color: chartreuse;">7</div>
+        <div style="background-color: coral;">8</div>
+        <div style="background-color: cornflowerblue;">9</div>
+
+    </div>
+
+    <p>flex flow:row wrap</p>
+    <div class="row_wrap">
+        <div style="background-color: antiquewhite;">1</div>
+        <div style="background-color: aqua;">2</div>
+        <div style="background-color: aquamarine;">3</div>
+        <div style="background-color:blueviolet;">4</div>
+        <div style="background-color: cadetblue;">5</div>
+        <div style="background-color: burlywood;">6</div>
+        <div style="background-color: chartreuse;">7</div>
+        <div style="background-color: coral;">8</div>
+        <div style="background-color: cornflowerblue;">9</div>
+    </div>
+
+        <p>flex flow:row wrap-reverse</p>
+        <div class="row_wrap_reverse">
+            <div style="background-color: antiquewhite;">1</div>
+            <div style="background-color: aqua;">2</div>
+            <div style="background-color: aquamarine;">3</div>
+            <div style="background-color:blueviolet;">4</div>
+            <div style="background-color: cadetblue;">5</div>
+            <div style="background-color: burlywood;">6</div>
+            <div style="background-color: chartreuse;">7</div>
+            <div style="background-color: coral;">8</div>
+            <div style="background-color: cornflowerblue;">9</div>
+        </div>
+
+    <p>flex flow:row-reverse nowrap</p>
+    <div class="row_reverse_nowrap">
+        <div style="background-color: antiquewhite;">1</div>
+        <div style="background-color: aqua;">2</div>
+        <div style="background-color: aquamarine;">3</div>
+        <div style="background-color:blueviolet;">4</div>
+        <div style="background-color: cadetblue;">5</div>
+        <div style="background-color: burlywood;">6</div>
+        <div style="background-color: chartreuse;">7</div>
+        <div style="background-color: coral;">8</div>
+        <div style="background-color: cornflowerblue;">9</div>
+    </div>
+
+        <p>flex flow:row-reverse wrap</p>
+        <div class="row_reverse_wrap">
+            <div style="background-color: antiquewhite;">1</div>
+            <div style="background-color: aqua;">2</div>
+            <div style="background-color: aquamarine;">3</div>
+            <div style="background-color:blueviolet;">4</div>
+            <div style="background-color: cadetblue;">5</div>
+            <div style="background-color: burlywood;">6</div>
+            <div style="background-color: chartreuse;">7</div>
+            <div style="background-color: coral;">8</div>
+            <div style="background-color: cornflowerblue;">9</div>
+            <div style="background-color: brown;"></div>
+        </div>
+
+        <p>flex flow:row-reverse wrap-reverse</p>
+        <div class="row_reverse_wrap_reverse">
+            <div style="background-color: antiquewhite;">1</div>
+            <div style="background-color: aqua;">2</div>
+            <div style="background-color: aquamarine;">3</div>
+            <div style="background-color:blueviolet;">4</div>
+            <div style="background-color: cadetblue;">5</div>
+            <div style="background-color: burlywood;">6</div>
+            <div style="background-color: chartreuse;">7</div>
+            <div style="background-color: coral;">8</div>
+            <div style="background-color: cornflowerblue;">9</div>
+            <div style="background-color: brown;"></div>
+        </div>
+</body>
+</html>

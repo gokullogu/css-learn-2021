@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/522cb6887a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+           .flex_container1{
+               display: flex;
+               flex-wrap: wrap;
+           }
+           .leftitem{
+               flex:50%;
+               padding: 10px 15px;
+               background-color:tomato;
+           }
+           .rightitem{
+               flex:50%;
+               padding: 10px 15px;
+               background-color:rgb(71, 99, 255);
+           }
+
+
+
+           .flex_container_2{
+               display: flex;
+               flex-direction: row;
+           }
+
+           .flexitemleft{
+               background-color: aquamarine;
+               padding: 10px 20px;
+               flex: 50%;
+           }
+
+           .flexitemright{
+               background-color: rgb(127, 255, 144);
+               padding: 10px 20px;
+               flex: 50%;
+           }
+
+           .flex_cont_3{
+               display: flex;
+               flex-direction: row;
+               width:95%;
+               margin: 10px auto;
+           }
+
+           .flex_cont_3 div{
+               padding: 10px 20px;
+               text-align: center;
+               flex:50%;
+               margin:5px 5px;
+           }
+
+
+           .flex_cont_4{
+               display: flex;
+               width: 350px;
+               height: 100px;
+           }
+           .flex_cont_4 div{
+               flex-grow: 1;
+           }
+           .flex_cont_4 div:nth-of-type(2){
+               background-color:rgb(73, 238, 31);
+               flex-grow: 3;
+           }
+
+
+
+           .flex_cont_5{
+               display: flex;
+               width: 350px;
+               height: 100px;
+           }
+           .flex_cont_5 div{
+              flex-grow: 1;
+              flex-basis: 100px;   /*default value to all div even shrink applied 
+              recommended min value for basis is 100px*/ 
+           }
+           .flex_cont_5 div:nth-of-type(2){
+               background-color:rgb(73, 238, 31);
+               flex-shrink: 3;
+           }
+    
+
+           @media(max-width:800px){
+               .leftitem,.rightitem{
+                    flex: 100%;
+                }
+                
+               .flex_container_2{
+                    flex-direction: column;
+                }
+
+                .flex_cont_3{
+                 flex-direction: column;
+                }
+
+                .flex_cont_4{
+                    flex-direction: column;
+                }
+  
+                .flex_cont_5{
+                    flex-direction: column;
+                }
+           }
+    </style>
+</head>
+<body>
+
+    <p>flex wrap</p>
+    <div class="flex_container1">
+        <div class="leftitem">1</div>
+        <div class="rightitem">2</div>
+    </div>
+
+    <p>flex direction </p>
+    <div class="flex_container_2">
+        <div class="flexitemleft">1</div>
+        <div class="flexitemright">2</div>
+    </div>
+
+    <p>flex direction row with three items</p>
+    <div class="flex_cont_3">
+       <div style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto porro at laborum eaque quis atque, et sapiente iste nisi tempore architecto sit soluta similique, magnam possimus ab voluptatibus accusantium.</div>
+       <div style="background-color: aquamarine;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias reiciendis saepe voluptatibus velit quia, facere quae sit natus nihil eaque, dolorem necessitatibus ex enim esse nisi maiores voluptatem quasi aliquid.</div>
+       <div style="background-color: bisque;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur animi labore obcaecati non aspernatur maiores est quae laudantium, sint quaerat odio repellat eos quibusdam, dolore, optio corrupti recusandae ipsa? Sapiente?</div>
+       </div>
+
+    <p>flex grow</p>
+    <div class="flex_cont_4">
+        <div style="background-color: antiquewhite;">1</div>
+        <div style="background-color: aquamarine;">2</div>
+        <div style="background-color:aqua;">3</div>
+        <div style="background-color: burlywood;">4</div>
+        <div style="background-color: cadetblue;">5</div>
+    </div>
+
+    <p>flex shrink</p>
+    <div class="flex_cont_5">
+    <div style="background-color: antiquewhite;">1</div>
+    <div style="background-color: aquamarine;">2</div>
+    <div style="background-color:aqua;">3</div>
+    <div style="background-color: burlywood;">4</div>
+    <div style="background-color: cadetblue;">5</div>
+    </div>
+</body>
+</html>
